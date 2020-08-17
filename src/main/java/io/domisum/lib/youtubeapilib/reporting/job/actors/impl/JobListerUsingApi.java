@@ -33,11 +33,12 @@ public class JobListerUsingApi
 			var response = page(credentials, nextPageToken);
 			nextPageToken = response.getNextPageToken();
 			
-			for(var job : response.getJobs())
-			{
-				var jobMetadata = new JobMetadata(job.getId(), job.getName(), job.getReportTypeId());
-				jobsMetadata.add(jobMetadata);
-			}
+			if(response.getJobs() != null)
+				for(var job : response.getJobs())
+				{
+					var jobMetadata = new JobMetadata(job.getId(), job.getName(), job.getReportTypeId());
+					jobsMetadata.add(jobMetadata);
+				}
 		}
 		while(nextPageToken != null);
 		
