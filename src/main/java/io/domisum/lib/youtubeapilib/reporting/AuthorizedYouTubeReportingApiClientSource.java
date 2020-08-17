@@ -13,7 +13,10 @@ public class AuthorizedYouTubeReportingApiClientSource
 	@Override
 	protected YouTubeReporting build(HttpRequestInitializer requestInitializer)
 	{
-		return new YouTubeReporting(new NetHttpTransport(), new JacksonFactory(), requestInitializer);
+		var builder = new YouTubeReporting.Builder(new NetHttpTransport(), new JacksonFactory(), requestInitializer);
+		builder.setApplicationName("YouTubeReportingApiLib");
+		
+		return builder.build();
 	}
 	
 }
