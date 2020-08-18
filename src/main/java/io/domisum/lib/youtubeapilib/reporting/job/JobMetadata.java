@@ -3,9 +3,11 @@ package io.domisum.lib.youtubeapilib.reporting.job;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import lombok.ToString;
 
 @RequiredArgsConstructor
 @EqualsAndHashCode(of = "id")
+@ToString
 public class JobMetadata
 {
 	
