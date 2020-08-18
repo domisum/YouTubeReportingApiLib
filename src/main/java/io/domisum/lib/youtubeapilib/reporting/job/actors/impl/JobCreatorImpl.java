@@ -10,7 +10,7 @@ import lombok.RequiredArgsConstructor;
 import java.io.IOException;
 
 @RequiredArgsConstructor
-public class JobCreatorUsingApi
+public class JobCreatorImpl
 		implements JobCreator
 {
 	

@@ -12,7 +12,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @RequiredArgsConstructor
-public class JobListerUsingApi
+public class JobListerImpl
 		implements JobLister
 {
 	
