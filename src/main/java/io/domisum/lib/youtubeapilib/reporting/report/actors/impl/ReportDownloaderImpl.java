@@ -2,6 +2,7 @@ package io.domisum.lib.youtubeapilib.reporting.report.actors.impl;
 
 import com.google.api.client.http.GenericUrl;
 import com.google.common.base.Charsets;
+import com.google.inject.Inject;
 import io.domisum.lib.youtubeapilib.YouTubeApiCredentials;
 import io.domisum.lib.youtubeapilib.reporting.AuthorizedYouTubeReportingApiClientSource;
 import io.domisum.lib.youtubeapilib.reporting.report.DownloadableReport;
@@ -11,7 +12,7 @@ import lombok.RequiredArgsConstructor;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-@RequiredArgsConstructor
+@RequiredArgsConstructor(onConstructor = @__(@Inject))
 public class ReportDownloaderImpl
 		implements ReportDownloader
 {

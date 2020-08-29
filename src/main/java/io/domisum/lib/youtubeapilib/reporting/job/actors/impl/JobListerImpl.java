@@ -1,6 +1,7 @@
 package io.domisum.lib.youtubeapilib.reporting.job.actors.impl;
 
 import com.google.api.services.youtubereporting.model.ListJobsResponse;
+import com.google.inject.Inject;
 import io.domisum.lib.youtubeapilib.YouTubeApiCredentials;
 import io.domisum.lib.youtubeapilib.reporting.AuthorizedYouTubeReportingApiClientSource;
 import io.domisum.lib.youtubeapilib.reporting.job.JobMetadata;
@@ -11,7 +12,7 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
-@RequiredArgsConstructor
+@RequiredArgsConstructor(onConstructor = @__(@Inject))
 public class JobListerImpl
 		implements JobLister
 {

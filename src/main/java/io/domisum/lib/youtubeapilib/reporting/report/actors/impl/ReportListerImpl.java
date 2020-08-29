@@ -2,6 +2,7 @@ package io.domisum.lib.youtubeapilib.reporting.report.actors.impl;
 
 import com.google.api.services.youtubereporting.model.ListReportsResponse;
 import com.google.api.services.youtubereporting.model.Report;
+import com.google.inject.Inject;
 import io.domisum.lib.youtubeapilib.YouTubeApiCredentials;
 import io.domisum.lib.youtubeapilib.reporting.AuthorizedYouTubeReportingApiClientSource;
 import io.domisum.lib.youtubeapilib.reporting.report.DownloadableReport;
@@ -15,7 +16,7 @@ import java.time.ZoneId;
 import java.util.HashSet;
 import java.util.Set;
 
-@RequiredArgsConstructor
+@RequiredArgsConstructor(onConstructor = @__(@Inject))
 public class ReportListerImpl
 		implements ReportLister
 {
