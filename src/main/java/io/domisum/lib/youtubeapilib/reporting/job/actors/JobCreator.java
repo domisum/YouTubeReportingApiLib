@@ -9,6 +9,6 @@ public interface JobCreator
 {
 	
 	String create(YouTubeApiCredentials credentials, JobMetadata jobMetadata)
-			throws IOException;
+		throws IOException;
 	
 }

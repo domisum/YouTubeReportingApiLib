@@ -10,6 +10,6 @@ public interface JobLister
 {
 	
 	Set<JobMetadata> listAll(YouTubeApiCredentials credentials)
-			throws IOException;
+		throws IOException;
 	
 }

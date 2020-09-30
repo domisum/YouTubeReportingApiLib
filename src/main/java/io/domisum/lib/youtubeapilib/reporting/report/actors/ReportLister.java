@@ -11,9 +11,9 @@ public interface ReportLister
 {
 	
 	Set<DownloadableReport> listAll(YouTubeApiCredentials credentials, String jobId)
-			throws IOException;
+		throws IOException;
 	
 	Set<DownloadableReport> listCreatedAfter(YouTubeApiCredentials credentials, String jobId, Instant afterThis)
-			throws IOException;
+		throws IOException;
 	
 }

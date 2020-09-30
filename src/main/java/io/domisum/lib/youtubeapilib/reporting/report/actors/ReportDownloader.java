@@ -9,6 +9,6 @@ public interface ReportDownloader
 {
 	
 	String download(YouTubeApiCredentials credentials, DownloadableReport report)
-			throws IOException;
+		throws IOException;
 	
 }

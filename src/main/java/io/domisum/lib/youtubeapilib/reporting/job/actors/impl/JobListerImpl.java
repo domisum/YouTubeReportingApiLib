@@ -14,7 +14,7 @@ import java.util.Set;
 
 @RequiredArgsConstructor(onConstructor = @__(@Inject))
 public class JobListerImpl
-		implements JobLister
+	implements JobLister
 {
 	
 	// DEPENDENCIES
@@ -24,7 +24,7 @@ public class JobListerImpl
 	// LIST
 	@Override
 	public Set<JobMetadata> listAll(YouTubeApiCredentials credentials)
-			throws IOException
+		throws IOException
 	{
 		var jobsMetadata = new HashSet<JobMetadata>();
 		
@@ -47,7 +47,7 @@ public class JobListerImpl
 	}
 	
 	private ListJobsResponse page(YouTubeApiCredentials credentials, String pageToken)
-			throws IOException
+		throws IOException
 	{
 		var youTubeReporting = authorizedYouTubeReportingApiClientSource.getFor(credentials);
 		

@@ -12,7 +12,7 @@ import java.io.IOException;
 
 @RequiredArgsConstructor(onConstructor = @__(@Inject))
 public class JobCreatorImpl
-		implements JobCreator
+	implements JobCreator
 {
 	
 	// DEPENDENCIES
@@ -22,7 +22,7 @@ public class JobCreatorImpl
 	// LIST
 	@Override
 	public String create(YouTubeApiCredentials credentials, JobMetadata jobMetadata)
-			throws IOException
+		throws IOException
 	{
 		var youTubeReporting = authorizedYouTubeReportingApiClientSource.getFor(credentials);
 		

@@ -14,7 +14,7 @@ import java.io.IOException;
 
 @RequiredArgsConstructor(onConstructor = @__(@Inject))
 public class ReportDownloaderImpl
-		implements ReportDownloader
+	implements ReportDownloader
 {
 	
 	// DEPENDENCIES
@@ -24,7 +24,7 @@ public class ReportDownloaderImpl
 	// DOWNLOAD
 	@Override
 	public String download(YouTubeApiCredentials credentials, DownloadableReport report)
-			throws IOException
+		throws IOException
 	{
 		var reporting = authorizedYouTubeReportingApiClientSource.getFor(credentials);
 		

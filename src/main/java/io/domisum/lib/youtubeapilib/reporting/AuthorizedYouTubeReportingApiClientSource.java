@@ -9,7 +9,7 @@ import io.domisum.lib.youtubeapilib.AuthorizedYouTubeApiClientSource;
 
 @Singleton
 public class AuthorizedYouTubeReportingApiClientSource
-		extends AuthorizedYouTubeApiClientSource<YouTubeReporting>
+	extends AuthorizedYouTubeApiClientSource<YouTubeReporting>
 {
 	
 	@Override

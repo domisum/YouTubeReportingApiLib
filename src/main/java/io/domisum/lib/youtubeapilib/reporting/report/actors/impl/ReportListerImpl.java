@@ -18,7 +18,7 @@ import java.util.Set;
 
 @RequiredArgsConstructor(onConstructor = @__(@Inject))
 public class ReportListerImpl
-		implements ReportLister
+	implements ReportLister
 {
 	
 	// DEPENDENCIES
@@ -28,20 +28,20 @@ public class ReportListerImpl
 	// LIST
 	@Override
 	public Set<DownloadableReport> listAll(YouTubeApiCredentials credentials, String jobId)
-			throws IOException
+		throws IOException
 	{
 		return list(credentials, jobId, null);
 	}
 	
 	@Override
 	public Set<DownloadableReport> listCreatedAfter(YouTubeApiCredentials credentials, String jobId, Instant createdAfter)
-			throws IOException
+		throws IOException
 	{
 		return list(credentials, jobId, createdAfter);
 	}
 	
 	private Set<DownloadableReport> list(YouTubeApiCredentials credentials, String jobId, Instant createdAfter)
-			throws IOException
+		throws IOException
 	{
 		var reports = new HashSet<DownloadableReport>();
 		
