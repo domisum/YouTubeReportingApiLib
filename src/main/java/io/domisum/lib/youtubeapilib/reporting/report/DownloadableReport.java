@@ -28,7 +28,7 @@ public class DownloadableReport
 	@Override
 	public String toString()
 	{
-		return PHR.r("{}-({}, created: {})", date, createdInstant);
+		return PHR.r("{}-({}, created: {})", id, date, createdInstant);
 	}
 	
 }
