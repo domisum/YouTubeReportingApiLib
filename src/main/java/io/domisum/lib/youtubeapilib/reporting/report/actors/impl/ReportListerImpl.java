@@ -1,7 +1,6 @@
 package io.domisum.lib.youtubeapilib.reporting.report.actors.impl;
 
 import com.google.api.services.youtubereporting.model.ListReportsResponse;
-import com.google.api.services.youtubereporting.model.Report;
 import com.google.inject.Inject;
 import io.domisum.lib.youtubeapilib.YouTubeApiCredentials;
 import io.domisum.lib.youtubeapilib.reporting.AuthorizedYouTubeReportingApiClientSource;
@@ -11,8 +10,6 @@ import lombok.RequiredArgsConstructor;
 
 import java.io.IOException;
 import java.time.Instant;
-import java.time.LocalDate;
-import java.time.ZoneId;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -71,25 +68,11 @@ public class ReportListerImpl
 		if(response.getReports() != null)
 			for(var report : response.getReports())
 			{
-				var downloadableReport = parseReport(report);
+				var downloadableReport = ReportGetterImpl.parseReport(report);
 				reports.add(downloadableReport);
 			}
 		
 		return reports;
-	}
-	
-	private DownloadableReport parseReport(Report report)
-	{
-		long reportId = Long.parseLong(report.getId());
-		String downloadUrl = report.getDownloadUrl();
-		
-		var startTime = Instant.parse(report.getStartTime());
-		var date = LocalDate.ofInstant(startTime, ZoneId.of("UTC"));
-		
-		var createdTime = Instant.parse(report.getCreateTime());
-		
-		var downloadableReport = new DownloadableReport(reportId, date, downloadUrl, createdTime);
-		return downloadableReport;
 	}
 	
 }

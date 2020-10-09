@@ -22,6 +22,6 @@ public class DownloadableReport
 	@Getter
 	private final String downloadUrl;
 	@Getter
-	private final Instant createdTime;
+	private final Instant createdInstant;
 	
 }
