@@ -32,9 +32,7 @@ public class JobCreatorImpl
 		
 		var create = youTubeReporting.jobs().create(job);
 		var response = create.execute();
-		String createdJobId = response.getId();
-		
-		return createdJobId;
+		return response.getId();
 	}
 	
 }

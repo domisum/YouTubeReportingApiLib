@@ -32,9 +32,7 @@ public class ReportDownloaderImpl
 		var outputStream = new ByteArrayOutputStream();
 		
 		reporting.media().download("").getMediaHttpDownloader().download(downloadUrl, outputStream);
-		String reportContent = new String(outputStream.toByteArray(), Charsets.UTF_8);
-		
-		return reportContent;
+		return new String(outputStream.toByteArray(), Charsets.UTF_8);
 	}
 	
 }

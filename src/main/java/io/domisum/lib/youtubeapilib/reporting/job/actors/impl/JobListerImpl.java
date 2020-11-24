@@ -53,9 +53,7 @@ public class JobListerImpl
 		
 		var list = youTubeReporting.jobs().list();
 		list.setPageToken(pageToken);
-		var response = list.execute();
-		
-		return response;
+		return list.execute();
 	}
 	
 }
