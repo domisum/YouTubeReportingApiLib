@@ -11,7 +11,7 @@ import lombok.RequiredArgsConstructor;
 import java.io.IOException;
 import java.time.Instant;
 import java.time.LocalDate;
-import java.time.ZoneId;
+import java.time.ZoneOffset;
 
 @RequiredArgsConstructor(onConstructor = @__(@Inject))
 public class ReportGetterImpl
@@ -39,7 +39,7 @@ public class ReportGetterImpl
 		String downloadUrl = report.getDownloadUrl();
 		
 		var startTime = Instant.parse(report.getStartTime());
-		var date = LocalDate.ofInstant(startTime, ZoneId.of("UTC"));
+		var date = LocalDate.ofInstant(startTime, ZoneOffset.UTC);
 		
 		var createdTime = Instant.parse(report.getCreateTime());
 		
