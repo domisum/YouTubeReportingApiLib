@@ -1,7 +1,7 @@
-package io.domisum.lib.youtubeapilib.reporting.report.actors;
+package io.domisum.lib.youtubeapilib.reporting.report;
 
 import io.domisum.lib.youtubeapilib.YouTubeApiCredentials;
-import io.domisum.lib.youtubeapilib.reporting.report.DownloadableReport;
+import io.domisum.lib.youtubeapilib.reporting.report.model.DownloadableReport;
 
 import java.io.IOException;
 import java.time.Instant;

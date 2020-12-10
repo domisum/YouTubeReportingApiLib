@@ -1,11 +1,10 @@
-package io.domisum.lib.youtubeapilib.reporting.report.actors.impl;
+package io.domisum.lib.youtubeapilib.reporting.report;
 
 import com.google.api.services.youtubereporting.model.Report;
 import com.google.inject.Inject;
 import io.domisum.lib.youtubeapilib.YouTubeApiCredentials;
 import io.domisum.lib.youtubeapilib.reporting.AuthorizedYouTubeReportingApiClientSource;
-import io.domisum.lib.youtubeapilib.reporting.report.DownloadableReport;
-import io.domisum.lib.youtubeapilib.reporting.report.actors.ReportGetter;
+import io.domisum.lib.youtubeapilib.reporting.report.model.DownloadableReport;
 import lombok.RequiredArgsConstructor;
 
 import java.io.IOException;

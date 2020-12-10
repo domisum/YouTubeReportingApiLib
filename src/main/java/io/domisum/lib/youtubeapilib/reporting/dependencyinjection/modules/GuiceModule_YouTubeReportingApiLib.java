@@ -1,16 +1,16 @@
 package io.domisum.lib.youtubeapilib.reporting.dependencyinjection.modules;
 
 import com.google.inject.AbstractModule;
-import io.domisum.lib.youtubeapilib.reporting.job.actors.JobCreator;
-import io.domisum.lib.youtubeapilib.reporting.job.actors.JobLister;
-import io.domisum.lib.youtubeapilib.reporting.job.actors.impl.JobCreatorImpl;
-import io.domisum.lib.youtubeapilib.reporting.job.actors.impl.JobListerImpl;
-import io.domisum.lib.youtubeapilib.reporting.report.actors.ReportDownloader;
-import io.domisum.lib.youtubeapilib.reporting.report.actors.ReportGetter;
-import io.domisum.lib.youtubeapilib.reporting.report.actors.ReportLister;
-import io.domisum.lib.youtubeapilib.reporting.report.actors.impl.ReportDownloaderImpl;
-import io.domisum.lib.youtubeapilib.reporting.report.actors.impl.ReportGetterImpl;
-import io.domisum.lib.youtubeapilib.reporting.report.actors.impl.ReportListerImpl;
+import io.domisum.lib.youtubeapilib.reporting.job.JobCreator;
+import io.domisum.lib.youtubeapilib.reporting.job.JobCreatorImpl;
+import io.domisum.lib.youtubeapilib.reporting.job.JobLister;
+import io.domisum.lib.youtubeapilib.reporting.job.JobListerImpl;
+import io.domisum.lib.youtubeapilib.reporting.report.ReportDownloader;
+import io.domisum.lib.youtubeapilib.reporting.report.ReportDownloaderImpl;
+import io.domisum.lib.youtubeapilib.reporting.report.ReportGetter;
+import io.domisum.lib.youtubeapilib.reporting.report.ReportGetterImpl;
+import io.domisum.lib.youtubeapilib.reporting.report.ReportLister;
+import io.domisum.lib.youtubeapilib.reporting.report.ReportListerImpl;
 
 public class GuiceModule_YouTubeReportingApiLib
 	extends AbstractModule

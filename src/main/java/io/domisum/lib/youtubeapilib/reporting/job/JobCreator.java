@@ -1,7 +1,7 @@
-package io.domisum.lib.youtubeapilib.reporting.job.actors;
+package io.domisum.lib.youtubeapilib.reporting.job;
 
 import io.domisum.lib.youtubeapilib.YouTubeApiCredentials;
-import io.domisum.lib.youtubeapilib.reporting.job.JobMetadata;
+import io.domisum.lib.youtubeapilib.reporting.job.model.JobMetadata;
 
 import java.io.IOException;
 

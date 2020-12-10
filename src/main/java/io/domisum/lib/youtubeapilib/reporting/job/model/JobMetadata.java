@@ -1,4 +1,4 @@
-package io.domisum.lib.youtubeapilib.reporting.job;
+package io.domisum.lib.youtubeapilib.reporting.job.model;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package io.domisum.lib.youtubeapilib.reporting.report;
+package io.domisum.lib.youtubeapilib.reporting.report.model;
 
 import io.domisum.lib.auxiliumlib.PHR;
 import lombok.EqualsAndHashCode;

@@ -1,11 +1,10 @@
-package io.domisum.lib.youtubeapilib.reporting.job.actors.impl;
+package io.domisum.lib.youtubeapilib.reporting.job;
 
 import com.google.api.services.youtubereporting.model.ListJobsResponse;
 import com.google.inject.Inject;
 import io.domisum.lib.youtubeapilib.YouTubeApiCredentials;
 import io.domisum.lib.youtubeapilib.reporting.AuthorizedYouTubeReportingApiClientSource;
-import io.domisum.lib.youtubeapilib.reporting.job.JobMetadata;
-import io.domisum.lib.youtubeapilib.reporting.job.actors.JobLister;
+import io.domisum.lib.youtubeapilib.reporting.job.model.JobMetadata;
 import lombok.RequiredArgsConstructor;
 
 import java.io.IOException;
