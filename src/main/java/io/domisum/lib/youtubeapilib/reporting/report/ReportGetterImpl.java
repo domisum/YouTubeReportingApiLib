@@ -36,10 +36,8 @@ public class ReportGetterImpl
 	{
 		long reportId = Long.parseLong(report.getId());
 		String downloadUrl = report.getDownloadUrl();
-		
 		var startTime = Instant.parse(report.getStartTime());
 		var date = LocalDate.ofInstant(startTime, ZoneOffset.UTC);
-		
 		var createdTime = Instant.parse(report.getCreateTime());
 		
 		return new DownloadableReport(reportId, date, downloadUrl, createdTime);
